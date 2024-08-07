@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Launch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.review-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h2, .review-section h3 {
+    text-align: center;
+}
+
+.review-summary {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    margin-bottom: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form label {
+    margin: 5px 0 2px;
+}
+
+.review-form input, .review-form select, .review-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.review-form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #218838;
+}
+</style>
+<body>
+    <div class="review-section">
+        <h2>Customer Reviews</h2>
+        <div class="review-summary">
+            <h3>Overall Rating: 4.5/5</h3>
+            <p>Based on 100 reviews</p>
+        </div>
+        <div class="reviews">
+            <div class="review">
+                <h4>John Doe</h4>
+                <p>Rating: 5/5</p>
+                <p>These pots are amazing! Highly recommend them to anyone.</p>
+            </div>
+            <div class="review">
+                <h4>Jane Smith</h4>
+                <p>Rating: 4/5</p>
+                <p>Great quality, but the delivery took longer than expected.</p>
+            </div>
+            
+        </div>
+        <div class="review-form">
+            <h3>Leave a Review</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+</body>
+</html>

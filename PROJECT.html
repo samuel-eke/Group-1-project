@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f1f1f1;
+            background-color: #2f2f2f;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Shipping {
+            text-align: start;
+            margin: 20px;
+        }
+
+        .Shipping button {
+            margin: 0 5px;
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .Shipping button:hover {
+            background-color: #505050;
+        }
+
+        .Name {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 5px;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            font-size: 25px;
+            line-height: 1.5;
+            color: #f1f1f1;
+        }
+
+        .preorder-button {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .preorder-button:hover {
+            background-color: #c70039;
+        }
+
+        .preorder-button:focus {
+            outline: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: gray;
+        }
+
+        nav .nav-links {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav .nav-links a {
+            padding: 20px;
+            background-color: gray;
+            color: #1f1f1f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            background-color: #1f1f1f;
+            color: white;
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icons i {
+            font-size: 24px;
+            color: #1f1f1f;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-icons i:hover {
+            color: white;
+        }
+
+        .review-section {
+            background-color: #383838;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: #f1f1f1;
+        }
+
+        .review-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff5733;
+        }
+
+        .review {
+            margin-bottom: 15px;
+        }
+
+        .review h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #c70039;
+        }
+
+        .review p {
+            margin: 5px 0 0 0;
+        }
+
+        .review-form {
+            margin-top: 20px;
+        }
+
+        .review-form input, .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .review-form button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .review-form button:hover {
+            background-color: #c70039;
+        }
+        .nav-left{
+            display: flex;
+            align-items: center;
+        }
+        .fa-search {
+            font-size: 24px; 
+            color: #333; 
+        } 
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="Shipping">
+            LOCATION
+            <button class="bounce-on-hover" style="color: black; background-color: gray;">US</button>
+            <button class="bounce-on-hover" style="color: black; background-color: gray;">UK</button>
+            <button class="bounce-on-hover" style="color: black; background-color: gray;">NG</button>
+        </div>
+        <div class="Name">
+            <img style="height: 100px; width: 300px;" src="IMG-20240805-WA0002.jpg" alt="MDH Hydration Logo">
+        </div>
+    </div>
+    
+    <nav class="navbar-expand-sm">
+        <div class="container-fluid" style="display: flex; justify-content: space-between;">
+            <div class="nav-links">
+                <a href="SHOPPING PAGE.html" class="bounce-on-hover">SHOP</a>
+                <a href="CART.html" class="bounce-on-hover">CART</a>
+                <a href="#review" class="bounce-on-hover about">REVIEW</a>
+            </div>
+            <div class="nav-icons nav-right">
+                <a class="nav-link" href="#newsletter"><i class="fas fa-user"></i></a>
+                <a class="nav-link" href="CART.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
+            </div>
+            
+            
+        </div>
+    </nav>
+    
+    <div id="shop">
+        <div class="row">
+            <div class="col-md-12 image-container">
+                <img src="Gemini_Generated_Image_3v27en3v27en3v27.jpeg" alt="Product Image">
+                <div id="overlay-text" class="overlay-text show">
+                    MDH HYDRATION IS A PREMIUM DRINK THAT REPLENISHES FLUIDS, BALANCES ELECTROLYTES, ENHANCES PERFORMANCE, AND SUPPORTS RECOVERY WITH ESSENTIAL NUTRIENTS LIKE SODIUM, POTASSIUM, MAGNESIUM, CALCIUM, VITAMINS C AND B, AND ANTIOXIDANTS, ALL IN A LOW-CALORIE, NATURALLY FLAVORED, AND SWEETENED FORMULA IDEAL FOR ATHLETES AND ACTIVE INDIVIDUALS.
+                </div>
+                <a href="SHOPPING PAGE.html"> <button class="preorder-button">PRE-ORDER NOW</button></a>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="review" class="review-section">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h3>John Doe</h3>
+            <p>MDH Hydration has been a game-changer for my workouts. I feel more energized and recover faster!</p>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p>I love the natural flavors and how it helps me stay hydrated during my busy days. Highly recommend!</p>
+        </div>
+        <div class="review">
+            <h3>Mike Johnson</h3>
+            <p>As an athlete, MDH Hydration provides everything I need to perform at my best. Great product!</p>
+        </div>
+        <div class="review">
+            <h3>Sarah Lee</h3>
+            <p>MDH Hydration keeps me going through my long runs. The electrolytes make a noticeable difference!</p>
+        </div>
+        <div class="review">
+            <h3>Chris Brown</h3>
+            <p>The best hydration drink I've ever had. It tastes great and works even better. Five stars!</p>
+        </div>
+        <div class="review">
+            <h3>Samuel Eke</h3>
+            <p>The best website I have ever seen! 10 OUT OF 10 Hydration drink as well.</p>
+        </div>
+
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <input type="text" id="reviewer-name" placeholder="Your Name">
+            <textarea id="review-text" placeholder="Your Review"></textarea>
+            <button onclick="submitReview()">Submit Review</button>
+        </div>
+    </div>
+
+    <script>
+        function submitReview() {
+            const name = document.getElementById('reviewer-name').value;
+            const reviewText = document.getElementById('review-text').value;
+
+            if (name && reviewText) {
+                const reviewSection = document.querySelector('.review-section');
+                const newReview = document.createElement('div');
+                newReview.classList.add('review');
+                
+                const reviewerName = document.createElement('h3');
+                reviewerName.textContent = name;
+
+                const reviewContent = document.createElement('p');
+                reviewContent.textContent = reviewText;
+
+                newReview.appendChild(reviewerName);
+                newReview.appendChild(reviewContent);
+
+                reviewSection.insertBefore(newReview, reviewSection.lastElementChild);
+
+                document.getElementById('reviewer-name').value = '';
+                document.getElementById('review-text').value = '';
+            } else {
+                alert('Please enter both your name and review.');
+            }
+        }
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Footer</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #000;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            footer {
+                background-color: #000;
+                padding: 20px;
+                text-align: center;
+            }
+            .newsletter-section {
+                margin-bottom: 20px;
+            }
+            .newsletter-section h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .newsletter-section p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .newsletter-section form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .newsletter-section input[type="email"],
+            .newsletter-section input[type="tel"] {
+                width: 80%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+            .newsletter-section input[type="tel"] {
+                background-image: url('path/to/us-flag-icon.png'); /* Add the path to your flag icon */
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                padding-left: 30px;
+            }
+            .newsletter-section p.terms {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+            .newsletter-section button {
+                padding: 10px 20px;
+                background-color: #fff;
+                color: #000;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .footer-links {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .footer-links a {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                margin: 5px 0;
+            }
+            .about-section {
+                margin-top: 20px;
+            }
+            .about-section h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .about-section p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .social-icons {
+                margin-top: 10px;
+            }
+            .social-icons a {
+                margin: 0 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <footer>
+            <div class="about-section">
+                <h2>ABOUT MDH</h2>
+                <p>
+                    MDH, Michael Daniel and Hans hydration was developed to fill the void where great taste meets function. With bold, thirst-quenching
+                    flavors to help you refresh, replenish, and refuel, MDH is the perfect boost for any endeavor. We're
+                    confident you'll love it as much as we do.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links" style="padding: 20px;">
+                <a href="#">TEAMS + ATHLETES</a>
+                <a href="#">CREATORS</a>
+                <a href="#">ARTISTS</a>
+                <a href="#">AMBASSADORS</a>
+                <a href="#">FAQS</a>
+                <a href="#">TERMS OF USE</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">RETURN POLICY</a>
+                <a href="#">WHERE TO BUY</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">MDH X OFFICIAL RULES</a>
+                <a href="#">MDH X REWARDS T&C</a>
+            </div>
+            <div id="newsletter" class="newsletter-section" style="padding: 40px;">
+                <h2>NEWSLETTER</h2>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <input type="tel" placeholder="Phone Number">
+                    <p class="terms">
+                        By subscribing, you consent to receive marketing communications from MDH using the provided email
+                        address and phone number. Consent to receive marketing is not required for purchase. Standard data and
+                        messaging rates may apply. You can opt-out at any time by contacting us or using the unsubscribe link.
+                        See our Privacy Policy for details.
+                    </p>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <p>&copy; 2024 MDH Hydration. All rights reserved.</p>
+
+            
+        </footer>
+    </body>
+    </html>
+    
+</body>
+</html>

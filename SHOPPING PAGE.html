@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1f1f1f;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #adb5bd;
+        }
+
+        .cart-icon, .back-icon {
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card img:hover {
+            opacity: 0.8;
+        }
+
+        .product-card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card-body h5 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #343a40;
+            transition: color 0.3s ease;
+        }
+
+        .product-card-body h5:hover {
+            color: #007bff;
+        }
+
+        .product-card-body p {
+            font-size: 1rem;
+            color: #1f1f1f;
+            margin-bottom: 15px;
+        }
+
+        .product-card-body .btn {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-card-body .btn:hover {
+            background-color: #1f1f1f;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="PROJECT.html">Home</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="PROJECT.html"><i class="fas fa-chevron-left back-icon"></i> Back</a>
+                </li>
+            </ul>
+            <a class="nav-link" href="CART.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
+            
+        </div>
+        
+    </nav>
+
+    
+    <div class="container my-4">
+        <div class="row">
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_p8z97yp8z97yp8z9.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH Strawberry blast</h5>
+                        <p>$20.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_rtcjp3rtcjp3rtcj.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH Pineapple kings</h5>
+                        <p>$20.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_3w3kn43w3kn43w3k.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH Rasberry dump</h5>
+                        <p>$25.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_1ff0qo1ff0qo1ff0.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH LIMITED EDITION</h5>
+                        <p>$50.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_2ucnso2ucnso2ucn.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH Pack of six</h5>
+                        <p>$100.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_rtcjp4rtcjp4rtcj.jpeg" alt="">
+                    <div class="product-card-body">
+                        <h5>MDH Orange splash</h5>
+                        <p>$20.00</p>
+                        <a href="CART.html"><button class="btn">Add to Cart</button></a>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
